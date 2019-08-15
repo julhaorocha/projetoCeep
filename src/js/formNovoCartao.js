@@ -17,7 +17,8 @@
             })
             form.insertBefore(msgErro, btnSubmit)
         }else {
-            numeroDocartao++
+            adcionaCartaoNoMural({conteudo: textarea.value})
+             /*numeroDocartao++
             const conteudoDoCartao = textarea.value
             const cartao = $(`
             <article id="cartao_${numeroDocartao}" tabindex="0" class="cartao">
@@ -74,8 +75,9 @@
                         cartao.remove()
                     })
                 }
-            })
+            })*/
         }
+        textarea.value = ""
     })
     form.classList.remove("no-js")
 })()
